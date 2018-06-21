@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="PHP," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="星汉灿烂,若出其里">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="php中引用&amp;amp;的真正理解-变量引用、函数引用、对象引用      php的引用（就是在变量或者函数、对象等前面加上&amp;amp;符号） //最重要就是 删除引用的变量 ，只是引用的变量访问不了，但是内容并没有销毁 在PHP 中引用的意思是：不同的名字访问同一个变量内容. 变量的引用        PHP 的引用允许你用两个变量来指向同一个内容  复制代码&amp;lt;?php$a=”ABC”;$b">
+<meta name="keywords" content="PHP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php的引用传递&amp;(地址传递)的理解">
+<meta property="og:url" content="http://yoursite.com/2018/06/21/php的引用/index.html">
 <meta property="og:site_name" content="EVEN BLOG">
-<meta property="og:description" content="星汉灿烂,若出其里">
+<meta property="og:description" content="php中引用&amp;amp;的真正理解-变量引用、函数引用、对象引用      php的引用（就是在变量或者函数、对象等前面加上&amp;amp;符号） //最重要就是 删除引用的变量 ，只是引用的变量访问不了，但是内容并没有销毁 在PHP 中引用的意思是：不同的名字访问同一个变量内容. 变量的引用        PHP 的引用允许你用两个变量来指向同一个内容  复制代码&amp;lt;?php$a=”ABC”;$b">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-02T17:41:57.558Z">
+<meta property="og:updated_time" content="2018-06-21T14:22:55.095Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="星汉灿烂,若出其里">
+<meta name="twitter:title" content="php的引用传递&amp;(地址传递)的理解">
+<meta name="twitter:description" content="php中引用&amp;amp;的真正理解-变量引用、函数引用、对象引用      php的引用（就是在变量或者函数、对象等前面加上&amp;amp;符号） //最重要就是 删除引用的变量 ，只是引用的变量访问不了，但是内容并没有销毁 在PHP 中引用的意思是：不同的名字访问同一个变量内容. 变量的引用        PHP 的引用允许你用两个变量来指向同一个内容  复制代码&amp;lt;?php$a=”ABC”;$b">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/21/php的引用/"/>
 
 
 
 
 
-  <title>tags | EVEN BLOG</title>
+  <title>php的引用传递&(地址传递)的理解 | EVEN BLOG</title>
   
 
 
@@ -240,40 +241,170 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/21/php的引用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="EVEN">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EVEN BLOG">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 6 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Centos/" style="font-size: 12px; color: #ccc">Centos</a> <a href="/tags/Github/" style="font-size: 12px; color: #ccc">Github</a> <a href="/tags/Hexo/" style="font-size: 12px; color: #ccc">Hexo</a> <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/MySQL/" style="font-size: 12px; color: #ccc">MySQL</a> <a href="/tags/PHP/" style="font-size: 12px; color: #ccc">PHP</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">php的引用传递&(地址传递)的理解</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-21T22:20:49+08:00">
+                2018-06-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>php中引用&amp;的真正理解-变量引用、函数引用、对象引用<br>      php的引用（就是在变量或者函数、对象等前面加上&amp;符号） //最重要就是 删除引用的变量 ，只是引用的变量访问不了，但是内容并没有销毁 在PHP 中引用的意思是：不同的名字访问同一个变量内容.</p>
+<p>变量的引用<br>        PHP 的引用允许你用两个变量来指向同一个内容 </p>
+<p>复制代码<br>&lt;?php<br>$a=”ABC”;<br>$b =&amp;$a;<br>echo $a;//这里输出:ABC<br>echo $b;//这里输出:ABC<br>$b=”EFG”;<br>echo $a;//这里$a的值变为EFG 所以输出EFG echo $b;//这里输出EFG<br>?&gt;<br>复制代码<br>      函数的传址调用 传址调用我就不多说了 下面直接给出代码</p>
+<p>复制代码<br>&lt;?php<br>function test(&amp;$a){<br>    $a=$a+100;<br>}<br>$b=1;<br>echo $b;//输出１ test($b);   //这里$b传递给函数的其实是$b的变量内容所处的内存地址，通过在函数里改变$a的值　就可以改变$b的值了 echo “<br>“; echo $b;//输出101<br>?&gt;<br>复制代码</p>
+<p> 要注意的是，在这里test(１);的话就会出错，原因是：PHP规定传递的引用不能为常量（可以看错误提示）。</p>
+<p>函数的引用返回 先看代码</p>
+<p>复制代码<br>&lt;?php<br>function &amp;test(){<br>    static $b=0;//申明一个静态变量<br>    $b=$b+1;<br>    echo $b;<br>    return $b; }<br>}<br>$a=test();//这条语句会输出　$b的值　为１<br>$a=5; $a=test();//这条语句会输出　$b的值　为2<br>$a=&amp;test();//这条语句会输出　$b的值　为3<br>$a=5; $a=test();//这条语句会输出　$b的值　为6<br>?&gt;<br>复制代码</p>
+<p>下面解释下：　 通过这种方式$a=test();得到的其实不是函数的引用返回，这跟普通的函数调用没有区别　至于原因：　这是ＰＨＰ的规定 ＰＨＰ规定通过$a=&amp;test(); 方式得到的才是函数的引用返回 至于什么是引用返回呢（ＰＨＰ手册上说：引用返回用在当想用函数找到引用应该被绑定在哪一个变量上面时。) 这句狗屁话　害我半天没看懂</p>
+<pre><code>用上面的例子来解释就是 $a=test()方式调用函数，只是将函数的值赋给$a而已，　而$a做任何改变，都不会影响到函数中的$b，而通过$a=&amp;test()方式调用函数呢, 他的作用是　将return $b中的　$b变量的内存地址与$a变量的内存地址　指向了同一个地方 即产生了相当于这样的效果($a=&amp;b;) 所以改变$a的值　也同时改变了$b的值　所以在执行了 $a=&amp;test(); $a=5; 以后，$b的值变为了5
+</code></pre><p>这里是为了让大家理解函数的引用返回才使用静态变量的，其实函数的引用返回多用在对象中</p>
+<p>对象的引用 </p>
+<p>复制代码<br>&lt;?php<br>class a{<br>    var $abc=”ABC”;<br>}<br>$b=new a;<br>$c=$b;<br>echo $b-&gt;abc;//这里输出ABC<br>echo $c-&gt;abc;//这里输出ABC $b-&gt;abc=”DEF”;<br>echo $c-&gt;abc;//这里输出DEF<br>?&gt;<br>复制代码<br>       以上代码是在PHP5中的运行效果 在PHP5中 对象的复制是通过引用来实现的。上列中$b=new a; $c=$b; 其实等效于$b=new a; $c=&amp;$b; PHP5中默认就是通过引用来调用对象， 但有时你可能想建立一个对象的副本，并希望原来的对象的改变不影响到副本 . 为了这样的目的，PHP定义了一个特殊的方法，称为__clone.</p>
+<p>引用的作用<br>       如果程序比较大,引用同一个对象的变量比较多,并且希望用完该对象后手工清除它,个人建议用 “&amp;” 方式,然后用$var=null的方式清除. 其它时候还是用php5的默认方式吧. 另外, php5中对于大数组的传递,建议用 “&amp;” 方式, 毕竟节省内存空间使用。</p>
+<p>取消引用 当你 unset 一个引用，只是断开了变量名和变量内容之间的绑定。这并不意味着变量内容被销毁了。例如：</p>
+<p>&lt;?php $a = 1; $b =&amp; $a; unset ($a); ?&gt;</p>
+<p>不会 unset $b，只是 $a。 function quoteTest(){ global $var ; //相当于 $var = &amp;$GLOBALS[‘var’]; unset($var); //删除只是删除引用，而引用的内容还存在,同上这并不意味着变量内容被销毁了}$var=1;quoteTest();echo $var; //  结果 1</p>
+<hr>
+<p>不会 unset $b，只是 $a。</p>
+<p>function quoteTest(){ global $var ; //相当于 $var = &amp;$GLOBALS[‘var’]; $var = 5; //因为他们都指向 同一内存内容}$var=1;quoteTest();echo $var; //结果 5———————————————————————————————-</p>
+<p>‘&amp;’ 这就是引用</p>
+<p>global 引用 当用 global $var 声明一个变量时实际上建立了一个到全局变量的引用。也就是说和这样做是相同的：</p>
+<p>&lt;?php $var =&amp; $GLOBALS[“var”]; ?&gt;</p>
+<p>这意味着，例如，unset $var 不会 unset 全局变量。</p>
+<p>$this 在一个对象的方法中，$this 永远是调用它的对象的引用。</p>
+<p>//下面再来个小插曲 php中对于地址的指向（类似指针）功能不是由用户自己来实现的，是由Zend核心实现的，php中引用采用的是“写时拷贝”的原理，就是除非发生写操作，指向同一个地址的变量或者对象是不会被拷贝的。</p>
+<p>通俗的讲 1:如果有下面的代码 [php] $a=”ABC”; $b=$a; [/php] 其实此时　$a与$b都是指向同一内存地址　而并不是$a与$b占用不同的内存</p>
+<p>２:如果在上面的代码基础上再加上如下代码 [php] $a=”EFG”; [/php] 由于$a与$b所指向的内存的数据要重新写一次了，此时Zend核心会自动判断　自动为$b生产一个$a的数据拷贝，重新申请一块内存进行存储</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PHP/" rel="tag"># PHP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/18/mysql/" rel="next" title="数据库设计细节">
+                <i class="fa fa-chevron-left"></i> 数据库设计细节
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
